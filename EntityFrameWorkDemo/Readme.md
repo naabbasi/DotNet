@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext -Connection "server=172.27.84.156;port=3306;database=qtime;uid=qbill_dev;password=Qt@DeV" -Provider Pomelo.EntityFrameworkCore.MySql -ContextDir QRoasterDbContext -Context QRoasterDbContext -OutputDir Models -DataAnnotations
