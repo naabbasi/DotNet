@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jni4net-proxygen xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://jni4net.github.io/0.8.9.0/toolConfig.xsd">
+    <TargetDirJvm>dotnet-proxies\jvm</TargetDirJvm>
+    <TargetDirClr>dotnet-proxies\clr</TargetDirClr>
+
+    <ClassPath Path="dotnet-proxies\QTimeReportEngine-Bridge.jar" Generate="true"/>
+    <ClassPath Path="dotnet-proxies\QTimeReportEngine.jar"/>
+    <ClassPath Path="dotnet-proxies\jni4net.j-0.8.9.0.jar"/>
+    <ClassPath Path="dotnet-proxies\bcutil-jdk15on-1.70.jar"/>
+    <ClassPath Path="dotnet-proxies\castor-core-1.4.1.jar"/>
+    <ClassPath Path="dotnet-proxies\castor-xml-1.4.1.jar"/>
+    <ClassPath Path="dotnet-proxies\commons-beanutils-1.9.4.jar"/>
+    <ClassPath Path="dotnet-proxies\commons-collections-3.2.2.jar"/>
+    <ClassPath Path="dotnet-proxies\commons-collections4-4.2.jar"/>
+    <ClassPath Path="dotnet-proxies\commons-digester-2.1.jar"/>
+    <ClassPath Path="dotnet-proxies\commons-lang3-3.4.jar"/>
+    <ClassPath Path="dotnet-proxies\commons-logging-1.1.1.jar"/>
+    <ClassPath Path="dotnet-proxies\ecj-3.21.0.jar"/>
+    <ClassPath Path="dotnet-proxies\itext-2.1.7.js10.jar"/>
+    <ClassPath Path="dotnet-proxies\jackson-annotations-2.13.3.jar"/>
+    <ClassPath Path="dotnet-proxies\jackson-core-2.13.3.jar"/>
+    <ClassPath Path="dotnet-proxies\jackson-databind-2.13.3.jar"/>
+    <ClassPath Path="dotnet-proxies\jackson-dataformat-xml-2.13.3.jar"/>
+    <ClassPath Path="dotnet-proxies\jakarta.annotation-api-1.3.5.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-annotation-processors-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-castor-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-chart-customizers-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-chart-themes-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-custom-visualization-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-fonts-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-functions-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\jasperreports-metadata-6.20.0.jar"/>
+    <ClassPath Path="dotnet-proxies\javax.inject-1.jar"/>
+    <ClassPath Path="dotnet-proxies\jcommon-1.0.23.jar"/>
+    <ClassPath Path="dotnet-proxies\jfreechart-1.0.19.jar"/>
+    <ClassPath Path="dotnet-proxies\jul-to-slf4j-1.7.36.jar"/>
+    <ClassPath Path="dotnet-proxies\log4j-api-2.17.2.jar"/>
+    <ClassPath Path="dotnet-proxies\log4j-to-slf4j-2.17.2.jar"/>
+    <ClassPath Path="dotnet-proxies\logback-classic-1.2.11.jar"/>
+    <ClassPath Path="dotnet-proxies\logback-core-1.2.11.jar"/>
+    <ClassPath Path="dotnet-proxies\lombok-1.18.24.jar"/>
+    <ClassPath Path="dotnet-proxies\mysql-connector-java-8.0.30.jar"/>
+    <ClassPath Path="dotnet-proxies\protobuf-java-3.19.4.jar"/>
+    <ClassPath Path="dotnet-proxies\slf4j-api-1.7.30.jar"/>
+    <ClassPath Path="dotnet-proxies\snakeyaml-1.30.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-aop-5.3.22.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-beans-5.3.22.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-boot-2.7.2.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-boot-autoconfigure-2.7.2.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-boot-starter-2.7.2.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-boot-starter-logging-2.7.2.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-context-5.3.22.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-core-5.3.22.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-expression-5.3.22.jar"/>
+    <ClassPath Path="dotnet-proxies\spring-jcl-5.3.22.jar"/>
+    <ClassPath Path="dotnet-proxies\stax2-api-4.2.1.jar"/>
+    <ClassPath Path="dotnet-proxies\velocity-engine-core-2.3.jar"/>
+    <ClassPath Path="dotnet-proxies\woodstox-core-6.2.7.jar"/>
+
+    <JavaClass TypeName="com.qterminals.integration.InitializeIntegration"/>
+    <!--<JavaClass TypeName="org.springframework.context.ConfigurableApplicationContext"/>-->
+    <JavaClass TypeName="com.qterminals.LaunchApp"/>
+    <JavaClass TypeName="com.qterminals.reporting.JasperReportEngine"/>
+    <JavaClass TypeName="com.qterminals.reporting.JasperReportEngineImpl"/>
+</jni4net-proxygen>

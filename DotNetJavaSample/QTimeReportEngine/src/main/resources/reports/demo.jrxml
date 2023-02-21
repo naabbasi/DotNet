@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report5" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="154e52aa-ce4e-4dc5-b922-fc2eeec9ecf2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="pReportTitle" class="java.lang.String"/>
+	<parameter name="pReportDescription" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select buser_userid , buser_first_name ,  buser_last_name from qbill.qbil_base_user]]>
+	</queryString>
+	<field name="buser_userid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="buser_userid"/>
+		<property name="com.jaspersoft.studio.field.label" value="buser_userid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qbil_base_user"/>
+	</field>
+	<field name="buser_first_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="buser_first_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="buser_first_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qbil_base_user"/>
+	</field>
+	<field name="buser_last_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="buser_last_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="buser_last_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qbil_base_user"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="160" height="42" uuid="b9833d07-de65-4134-b068-c7b3a1e6fa29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pReportTitle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="390" height="42" uuid="46007131-6d71-42a2-b212-c035c5a35c1b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pReportDescription}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="119" height="30" uuid="e1d57461-a429-44f3-bc4e-7dd68051c8fb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09aac07d-e842-4b4d-94f9-32231c23087c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="0" width="211" height="30" uuid="9ca15776-c621-42c1-b931-3da370add3dc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5272b720-729c-47d9-bf41-8d8300d7df5f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[FirstName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="220" height="30" uuid="a43c8c0c-e2a1-412e-8d90-95ecc33f0084">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59eab04c-3a3a-4130-97b3-cf9f56237df1"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[LastName]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="119" height="30" uuid="5d32a2b2-d0fd-458c-aae3-8651788e1e50">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09aac07d-e842-4b4d-94f9-32231c23087c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{buser_userid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="0" width="211" height="30" uuid="48fd8fd7-52a4-4138-8c45-d507f8e95b25">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5272b720-729c-47d9-bf41-8d8300d7df5f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{buser_first_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="220" height="30" uuid="fd8529df-db85-4df5-bab6-83ef4fbc5032">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59eab04c-3a3a-4130-97b3-cf9f56237df1"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{buser_last_name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
