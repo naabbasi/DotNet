@@ -8,10 +8,10 @@ using log4net;
 
 internal class Program
 {
-    private static readonly ILog log = LogManager.GetLogger(typeof(Program));
+    private static readonly ILog LOG = LogManager.GetLogger(typeof(Program));
 
     [Flags]
-    public enum Days
+    private enum Days
     {
         None = 0,  // 0
         Monday = 1,  // 1
@@ -30,7 +30,7 @@ internal class Program
         string numberAsString = "12345";
         int number = int.Parse(numberAsString);
         Console.WriteLine("Number = {0}", number);
-        log.Info($"Number = {number}");
+        LOG.Info($"Number = {number}");
 
         var item = (Name: "eggplant", Price: 1.99m, perPackage: 3);
         var date = DateTime.Now;
@@ -76,7 +76,7 @@ internal class Program
         int i = s.WordCount();
         Console.WriteLine($"Total words found {i}");
 
-        var result = AsyncSample.getAsyncString().Result;
+        var result = AsyncSample.GetAsyncString().Result;
         Console.WriteLine(result);
 
         Divide(10, 3, out int res, out int rem);
