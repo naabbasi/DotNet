@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class UserDBContext : DbContext
 {
-    private const string connectionString = @"server=172.27.84.156;port=3306;database=qtime;user=qbill_dev;password=Qt@DeV";
+    private const string connectionString = @"server=localhost;port=3306;database=qtime;user=qbill_dev;password=Qt@DeV";
     private static readonly ILog log = LogManager.GetLogger(typeof(UserDBContext));
 
     public DbSet<User> Users { get; set; }

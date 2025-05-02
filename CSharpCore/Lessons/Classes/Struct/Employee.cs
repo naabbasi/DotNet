@@ -2,21 +2,22 @@
 {
     public struct Employee
     {
-        private string FirstName;
-        private string LastName;
+        private readonly string _firstName;
+        private readonly string _lastName;
 
         public Employee()
         {
-            FirstName = "";
-            LastName = "";
+            _firstName = "";
+            _lastName = "";
         }
 
         public Employee(string firstName, string lastName)
         {
-            FirstName = firstName;
-            LastName = lastName;
+            _firstName = firstName;
+            _lastName = lastName;
         }
 
-        public override string ToString() => $"{FirstName} {LastName}";
+        
+        public override string ToString() => $"{_firstName} {_lastName}";
     }
 }

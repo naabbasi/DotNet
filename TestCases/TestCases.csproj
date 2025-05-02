@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CSharpCore\CSharpCore.csproj" />
     <ProjectReference Include="..\LearnEntityFramework\LearnEntityFramework.csproj" />
   </ItemGroup>
 

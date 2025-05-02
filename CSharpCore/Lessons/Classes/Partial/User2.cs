@@ -2,11 +2,7 @@
 {
     public partial class User
     {
-        public string FullName { get
-            {
-                return string.Join(Firstname, " ", Lastname);
-            } 
-        }
+        private string FullName => string.Join(Firstname, " ", Lastname);
 
         public override string? ToString()
         {

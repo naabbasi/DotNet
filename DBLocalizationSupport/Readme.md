@@ -44,7 +44,7 @@ Add the following in appsettings.json
 ```
 {
   "ConnectionStrings": {
-    "QRoasterDBConnection": "server=172.27.84.156;port=3306;database=qtime;user=qbill_dev;password=Qt@DeV"
+    "QRoasterDBConnection": "server=localhost;port=3306;database=qtime;user=qbill_dev;password=Qt@DeV"
   },
   "Logging": {
     "LogLevel": {

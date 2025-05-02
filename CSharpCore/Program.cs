@@ -6,6 +6,8 @@ using CSharpCore.Lessons.Extensions;
 using CSharpCore.Lessons.Generics;
 using log4net;
 
+namespace CSharpCore;
+
 internal class Program
 {
     private static readonly ILog LOG = LogManager.GetLogger(typeof(Program));
@@ -52,8 +54,8 @@ internal class Program
             Console.WriteLine($"|{itemRow.Key,-25}|{itemRow.Value,10}|");
 
         IEnumerable<KeyValuePair<string, int>> query = from itemRow in inventory
-        where itemRow.Value > 10
-        select itemRow;
+            where itemRow.Value > 10
+            select itemRow;
 
         Person person1 = new("Noman","Ali") { PhoneNumbers = new string[1] };
         person1.PhoneNumbers[0] = "74715761";
@@ -82,7 +84,7 @@ internal class Program
         Divide(10, 3, out int res, out int rem);
         Console.WriteLine($"{res} {rem}");  // "3 1"
 
-        Console.WriteLine(program.func("Noman Ali Abbasi"));
+        Console.WriteLine(program._func("Noman Ali Abbasi"));
 
         var func1 = (string name) => $"My name is {name}";
         Console.WriteLine(func1("Noman Ali Abbasi"));
@@ -102,7 +104,7 @@ internal class Program
         Console.WriteLine(partialUser.ExFullName());
     }
 
-    Func<string, string> func = (string name) => $"My name is {name}";
+    private readonly Func<string, string> _func = (name) => $"My name is {name}";
 
     static void Divide(int x, int y, out int result, out int remainder)
     {

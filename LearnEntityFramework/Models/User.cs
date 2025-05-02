@@ -11,9 +11,11 @@ public partial class User
     [Key]
     [Column("user_gkey")]
     public long UserGkey { get; set; }
+    
     [Column("username")]
     [StringLength(255)]
     public string Username { get; set; } = null!;
+    
     [Column("password")]
     [StringLength(255)]
     public string Password { get; set; } = null!;
