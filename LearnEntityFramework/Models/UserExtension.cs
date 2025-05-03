@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityFrameWorkDemo.Models
+namespace LearnEntityFramework.Models
 {
     public partial class User
     { 

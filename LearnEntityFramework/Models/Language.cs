@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace EntityFrameWorkDemo.Models
+namespace LearnEntityFramework.Models
 {
     [Table("languages")]
     public partial class Language

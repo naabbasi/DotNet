@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMinimalApi", "WebMinimal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBLocalizationSupport", "DBLocalizationSupport\DBLocalizationSupport.csproj", "{033D4015-F634-47E1-965C-AF7B4EE52BE5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameWorkDemo", "EntityFrameWorkDemo\EntityFrameWorkDemo.csproj", "{419B0379-4C2E-443E-97CF-3096E1A9E5DE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,14 +71,6 @@ Global
 		{033D4015-F634-47E1-965C-AF7B4EE52BE5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{033D4015-F634-47E1-965C-AF7B4EE52BE5}.Release|x64.ActiveCfg = Release|Any CPU
 		{033D4015-F634-47E1-965C-AF7B4EE52BE5}.Release|x64.Build.0 = Release|Any CPU
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Debug|x64.ActiveCfg = Debug|x64
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Debug|x64.Build.0 = Debug|x64
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Release|x64.ActiveCfg = Release|Any CPU
-		{419B0379-4C2E-443E-97CF-3096E1A9E5DE}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
